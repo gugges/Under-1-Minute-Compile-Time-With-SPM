@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "artsy-canvas.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

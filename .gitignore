@@ -1,0 +1,35 @@
+
+## macOS
+.DS_STORE
+
+## User settings
+*.xcworkspace/xcuserdata/*
+TestApp/*.xcworkspace/xcuserdata/*
+
+*.xcodeproj/xcuserdata/*
+TestApp/*.xcodeproj/xcuserdata/*
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.swiftpm
+.build/
+
+# CocoaPods
+Pods/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output

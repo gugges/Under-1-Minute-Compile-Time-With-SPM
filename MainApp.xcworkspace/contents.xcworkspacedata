@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Modules/Bootstrap">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Core">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Discover">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Experiments">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Interfaces">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Login">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Networking">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Routing">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/Settings">
+   </FileRef>
+   <FileRef
+      location = "group:MainApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

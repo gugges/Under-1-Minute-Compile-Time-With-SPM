@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "adventurous-bag.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
