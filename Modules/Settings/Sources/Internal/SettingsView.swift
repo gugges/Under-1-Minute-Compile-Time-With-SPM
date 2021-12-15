@@ -5,7 +5,7 @@ import SwiftUI
 struct SettingsView: View {
     
     private let interfaces: Interfaces?
-    
+
     // MARK: - Init
     
     init(interfaces: Interfaces?) {
@@ -15,56 +15,63 @@ struct SettingsView: View {
     // MARK: - Body
     
     var body: some View {
-        
         ZStack {
             Color.black.ignoresSafeArea()
             
             VStack {
                 Spacer()
-                
-                Button {
-                    togglePhysicsExperiment()
-                    
-                } label: {
-                   VStack {
-                       Image(systemName: "atom")
-                           .font(Font.system(size: 40, weight: .light))
-                           .foregroundColor(Color.white)
-                       Spacer()
-                           .frame(height: 6)
-                        Text("Toggle Physics Experiment")
-                            .font(.title2)
-                            .foregroundColor(Color.white)
-                    }
-                    .padding()
-                    .frame(width: 300)
-                    .background(Color.purple)
-                    .cornerRadius(4)
-                }
+
+                makePhysicsButton()
                 
                 Spacer()
                     .frame(height: 30)
                                     
-                Button {
-                    signOut()
-                    
-                } label: {
-                    VStack {
-                         Text("Sign out")
-                             .font(.title2)
-                             .foregroundColor(Color.white)
-                     }
-                     .padding()
-                     .frame(width: 300)
-                     .background(Color.blue)
-                     .cornerRadius(4)
-                }
+                makeSignOutButton()
                 
                 Spacer()
             }
         }
     }
-    
+
+    private func makePhysicsButton() -> some View {
+        Button {
+            togglePhysicsExperiment()
+
+        } label: {
+            VStack {
+                Image(systemName: "atom")
+                    .font(Font.system(size: 40, weight: .light))
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 6)
+                Text("Toggle Physics Experiment")
+                    .font(.title2)
+                    .foregroundColor(Color.white)
+            }
+            .padding()
+            .frame(width: 300)
+            .background(Color.purple)
+            .cornerRadius(4)
+        }
+    }
+
+    private func makeSignOutButton() -> some View {
+        Button {
+            signOut()
+
+        } label: {
+            VStack {
+                 Text("Sign out")
+                     .font(.title2)
+                     .foregroundColor(Color.white)
+             }
+             .padding()
+             .frame(width: 300)
+             .background(Color.blue)
+             .cornerRadius(4)
+        }
+    }
+
     // MARK: - Actions
     
     private func togglePhysicsExperiment() {
@@ -83,9 +90,9 @@ struct SettingsView: View {
     }
     
     private func signOut() {
-        self.interfaces?.logInterface.debug("Sign out button tapped")
-        self.interfaces?.bootstrapInterface.set(accessToken: nil)
-        self.interfaces?.bootstrapInterface.fetchBootstrap()
+        interfaces?.logInterface.debug("Sign out button tapped")
+        interfaces?.bootstrapInterface.set(accessToken: nil)
+        interfaces?.bootstrapInterface.fetchBootstrap()
     }
 }
 
