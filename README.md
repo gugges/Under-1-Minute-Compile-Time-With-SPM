@@ -14,7 +14,7 @@ Note that all Modules are shared between the MainApp and TestApp. This allows yo
 
 ## Presentation
 
-Please watch the presentation on the Dev Community / iOSoho [YouTube Channel](https://www.youtube.com/channel/UC6LQu2qmtVqYBaXc_3p5UKA)
+Please watch the presentation on the Dev Community / iOSoho [YouTube Channel](https://www.youtube.com/watch?v=wvbBmu--jL8)
 
 ## Author
 Jordan Guggenheim, @gugges Twitter
